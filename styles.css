@@ -1,0 +1,332 @@
+
+.newclient-container {
+    width: 100%;
+    height: 100vh;
+    background-Color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display: flex;
+    flex-Direction: column;
+    justify-Content: center;
+    align-Items: center;
+  }
+  
+  .newclient {
+    background-Color: white;
+    width: 400px;
+    height: max-content;
+    border-Radius: 10px;
+    padding: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  
+  }
+  
+  .newclient h1 {
+    margin-bottom: 20px;
+  }
+  
+  .newclient input {
+    margin-bottom: 20px;
+  }
+  
+  .newclient button[data-type="close"] {
+    margin-top: 20px;
+    float: right;
+  }
+  
+  .newclient button[data-type="submit"] {
+    margin-top: 20px;
+    float: left;
+  }
+  
+  .two-section {
+    display: flex;
+    justify-self: self-end;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 100% !important;
+    padding: 50px 20px;
+  
+  }
+  
+  .table-container {
+    user-select: none;
+    min-height: 100%;
+    overflow: scroll;
+    background-color: var(--bs-light);
+    border: 1px solid var(--bs-gray);
+    border-radius: 20px;
+  
+  }
+  
+  #user-table tr:nth-child(0) {
+    position: fixed;
+  }
+  
+  /* .input-group{
+    width: 60%;
+  } */
+  
+  
+  .dialog {
+    height: max-content;
+    width: max-content;
+    border-radius: 10px;
+    background-color: white;
+    padding: 30px 30px;
+  
+  }
+  
+  .dialog-container {
+    width: 100%;
+    height: 100vh;
+    background-Color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display: flex;
+    flex-Direction: column;
+    justify-Content: center;
+    align-Items: center;
+  }
+  
+  .dialog-footer {
+    display: flex;
+    justify-Content: space-between;
+  }
+  
+  #user-table th {
+    min-width: 140px;
+    text-align: center;
+  }
+  
+  body {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .title-panel-section {
+    display: flex;
+    align-self: left;
+    justify-self: center;
+    height: max-content;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+  }
+  
+  .title-panel-section h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .title-panel-section button {
+    position: relative;
+    top: 0
+  }
+  
+  
+  .footer-section {
+    width: 100%;
+    justify-self: end;
+    bottom: 0;
+  }
+  
+  .edit-btn,
+  .del-btn {
+    cursor: pointer;
+  }
+  
+  .edit-btn:hover {
+    cursor: pointer;
+    color: var(--bs-blue);
+  }
+  
+  .del-btn:hover {
+    cursor: pointer;
+    color: var(--bs-red);
+  }
+  
+  
+  .one-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    padding-top: 25px;
+    background-color: var(--bs-light);
+  
+  
+  }
+  
+  .style-strip-green {
+    background-color: var(--bs-green);
+    color: white;
+    width: 100%;
+    height: 4px;
+  }
+  
+  .editClient-container {
+    width: 100%;
+    height: 100vh;
+    background-Color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display: flex;
+    flex-Direction: column;
+    justify-Content: center;
+    align-Items: center;
+  }
+  
+  .editClient {
+    height: max-content;
+    background-color: white;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  
+  .edit-form-buttons {
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .edit-client-inputs input {
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-container{
+    margin-top: 10px;
+    display:flex;
+    gap: 10px;
+  }
+
+.login{
+    width:350px;
+    height:max-content;
+    background-Color: white;
+    padding:40px 30px;
+    border-Radius: 20px;
+    box-shadow: 0px 0px 10px rgba(255,255,255, 0.4);
+
+  }
+
+.login h1{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.login input{
+    margin-bottom: 20px;
+}
+
+  .login-body{
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-Content: center;
+    align-Items: center;
+    background-color: var(--bs-light);
+    
+  }
+
+.login button{
+    float: right;
+}
+ /* rapid vertical shake animation*/
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+
+}
+
+.userID:hover{
+  color: var(--bs-green) !important;
+  cursor: pointer !important;
+}
+
+
+.newEvent-container{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-Content: center;
+  align-Items: center;
+  
+}
+
+.newEvent{
+  width: 350px;
+  height: max-content;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+
+.user-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info label,input{
+  display: inline-block;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+#events-table{
+  width:100%;
+}
+
+table td{
+  vertical-align: middle;
+}
+
+.table-container-events{
+  width: 90%;
+  user-select: none;
+    min-height: 100%;
+    overflow: scroll;
+    background-color: var(--bs-light);
+    border: 1px solid var(--bs-gray);
+    border-radius: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+  body {
+    overflow: scroll;
+  }
+}
